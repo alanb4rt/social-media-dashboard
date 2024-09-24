@@ -7,6 +7,10 @@
   font-size: 0.875rem;
   line-height: 1.25;
   font-weight: 400;
+
+  /* Variables */
+  --color-green: hsl(163 72% 41%);
+  --color-red: hsl(356 69% 56%);
 }
 
 * {
