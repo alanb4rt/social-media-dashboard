@@ -1,5 +1,6 @@
 import iconUp from "../assets/images/icon-up.svg";
 import iconDown from "../assets/images/icon-down.svg";
+import { formatNumber } from "../utils/formatNumber";
 
 export default function FollowerCard(props) {
   const { platform, username, followers, todayChange, color } = props;
@@ -20,7 +21,7 @@ export default function FollowerCard(props) {
         <p>{username}</p>
       </div>
       <div>
-        <h3 className="text-6xl font-bold">{followers}</h3>
+        <h3 className="text-6xl font-bold">{formatNumber(followers)}</h3>
         <p className="uppercase tracking-widest">Followers</p>
       </div>
       <p

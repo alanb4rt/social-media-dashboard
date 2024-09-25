@@ -1,5 +1,6 @@
 import iconUp from "../assets/images/icon-up.svg";
 import iconDown from "../assets/images/icon-down.svg";
+import { formatNumber } from "../utils/formatNumber";
 
 export default function OverviewCard(props) {
   const { platform, title, value, todayChange } = props;
@@ -13,7 +14,7 @@ export default function OverviewCard(props) {
         <img src={`./src/assets/images/icon-${platform}.svg`} alt="" />
       </div>
       <div className="flex justify-between items-end gap-4">
-        <p className="text-4xl font-bold leading-none">{value}</p>
+        <p className="text-4xl font-bold leading-none">{formatNumber(value)}</p>
         <p
           className="flex justify-center items-center gap-1"
           style={{
