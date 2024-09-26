@@ -8,9 +8,11 @@ export default function OverviewCard(props) {
   const icon = todayChange > 0 ? iconUp : iconDown;
 
   return (
-    <div className="bg-gray-100 p-8 rounded">
+    <div className="card p-8">
       <div className="flex justify-between items-center gap-4 mb-6">
-        <h3 className="font-bold">{title}</h3>
+        <h3 className="text-[var(--color-text-secondary)] font-bold">
+          {title}
+        </h3>
         <img src={`./src/assets/images/icon-${platform}.svg`} alt="" />
       </div>
       <div className="flex justify-between items-end gap-4">
