@@ -18,7 +18,12 @@
   --color-green: hsl(163 72% 41%);
   --color-red: hsl(356 69% 56%);
 
-  --color-toggle: hsl(230 22% 74%);
+  --color-toggle-off: hsl(230 22% 74%);
+  --color-toggle-on: linear-gradient(
+    to right,
+    hsl(210 78% 56%),
+    hsl(146 68% 55%)
+  );
   --color-bg: hsl(0 0% 100%);
   --color-bg-top-pattern: hsl(225 100% 98%);
   --color-bg-card: hsl(227 47% 96%);
@@ -27,16 +32,11 @@
 }
 
 [data-theme="dark"] {
-  --color-toggle: linear-gradient(hsl(210 78% 56%), hsl(146 68% 55%));
   --color-bg: hsl(230 17% 14%);
   --color-bg-top-pattern: hsl(232 19% 15%);
   --color-bg-card: hsl(228 28% 20%);
   --color-text-main: hsl(0 0% 100%);
   --color-text-secondary: hsl(228 34% 66%);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -48,6 +48,17 @@ body {
 #App {
   background: var(--color-bg);
   color: var(--color-text-main);
+}
+
+.ctn-toggle-button {
+  display: inline-flex;
+  border-radius: 50vmax;
+  background: var(--color-toggle-off);
+}
+
+.ctn-toggle-button[aria-checked="true"],
+.ctn-toggle-button:hover {
+  background: var(--color-toggle-on);
 }
 
 .card {

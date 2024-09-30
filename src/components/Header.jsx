@@ -1,3 +1,5 @@
+import ToggleButton from "./ToggleButton";
+
 export default function Header() {
   return (
     <header className="flex justify-between items-center gap-8 py-4 mb-8">
@@ -7,7 +9,7 @@ export default function Header() {
           Total Followers: 23,004
         </p>
       </div>
-      <div className="w-fit text-[var(--color-text-secondary)]">Dark Mode</div>
+      <ToggleButton />
     </header>
   );
 }
