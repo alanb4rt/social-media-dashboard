@@ -1,3 +1,3 @@
 export const formatNumber = (number) => {
-    return number >= 10000 ? (number / 1000).toFixed(0) + "k" : number
+    return number >= 10000 ? `${Math.floor((number / 1000))}k` : number;
 };
