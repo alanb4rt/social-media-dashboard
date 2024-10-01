@@ -54,7 +54,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  height: 200px;
+  height: 240px;
   background-color: var(--color-bg-top-pattern);
   border-radius: 0 0 2rem 2rem;
 }

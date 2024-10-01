@@ -12,7 +12,7 @@ export default function ToggleButton() {
 
   return (
     <section className="flex flex-row items-center gap-4 w-fit">
-      <p className="text-[var(--color-text-secondary)]">Dark Mode</p>
+      <p className="text-[var(--color-text-secondary)] font-bold">Dark Mode</p>
       <div className="ctn-toggle-button" aria-checked={isDarkMode}>
         <button
           className={`inline-flex ${togglePosition} w-14 border-2 border-transparent`}
