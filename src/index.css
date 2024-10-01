@@ -50,6 +50,15 @@ body {
   color: var(--color-text-main);
 }
 
+#header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 200px;
+  background-color: var(--color-bg-top-pattern);
+  border-radius: 0 0 2rem 2rem;
+}
+
 .ctn-toggle-button {
   display: inline-flex;
   border-radius: 50vmax;

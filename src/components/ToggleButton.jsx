@@ -18,7 +18,7 @@ export default function ToggleButton() {
           className={`inline-flex ${togglePosition} w-14 border-2 border-transparent`}
           onClick={handleTheme}
         >
-          <span className="inline-flex size-6 rounded-full bg-white"></span>
+          <span className="inline-flex size-6 rounded-full bg-[var(--color-bg)]"></span>
         </button>
       </div>
     </section>

@@ -7,9 +7,9 @@ import { overview } from "./data/overview";
 export default function App() {
   return (
     <>
-      <div className="w-full max-w-screen-lg mx-auto p-4">
-        <Header />
-        <main>
+      <Header />
+      <main>
+        <div className="w-full max-w-screen-lg mx-auto p-4">
           <section className="flex gap-8 flex-wrap mb-8">
             {followers.map((data, index) => (
               <FollowerCard key={index} {...data} />
@@ -23,8 +23,8 @@ export default function App() {
               ))}
             </div>
           </section>
-        </main>
-      </div>
+        </div>
+      </main>
     </>
   );
 }
