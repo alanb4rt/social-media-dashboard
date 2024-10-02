@@ -1,6 +1,7 @@
 import iconUp from "../assets/images/icon-up.svg";
 import iconDown from "../assets/images/icon-down.svg";
 import { formatNumber } from "../utils/formatNumber";
+import { getImageURL } from "../utils/getImageURL";
 
 export default function OverviewCard(props) {
   const { platform, title, count, todayChange } = props;
@@ -13,7 +14,7 @@ export default function OverviewCard(props) {
         <h3 className="text-[var(--color-text-secondary)] font-bold">
           {title}
         </h3>
-        <img src={`./src/assets/images/icon-${platform}.svg`} alt="" />
+        <img src={getImageURL(`icon-${platform}.svg`)} alt={platform} />
       </div>
       <div className="flex justify-between items-end gap-4">
         <p className="text-4xl font-bold leading-none">{formatNumber(count)}</p>

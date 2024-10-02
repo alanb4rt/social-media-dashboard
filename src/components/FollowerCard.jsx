@@ -1,6 +1,7 @@
 import iconUp from "../assets/images/icon-up.svg";
 import iconDown from "../assets/images/icon-down.svg";
 import { formatNumber } from "../utils/formatNumber";
+import { getImageURL } from "../utils/getImageURL";
 
 export default function FollowerCard(props) {
   const { platform, username, count, metric, todayChange, color } = props;
@@ -20,7 +21,7 @@ export default function FollowerCard(props) {
         style={borderStyle}
       ></div>
       <div className="flex justify-center items-end gap-2">
-        <img src={`./src/assets/images/icon-${platform}.svg`} alt="" />
+        <img src={getImageURL(`icon-${platform}.svg`)} alt={platform} />
         <p className="text-sm text-[var(--color-text-secondary)] font-bold">
           {username}
         </p>
