@@ -26,7 +26,9 @@ export default function FollowerCard(props) {
         </p>
       </div>
       <div>
-        <h3 className="text-7xl font-bold">{formatNumber(count)}</h3>
+        <h3 className="text-[4rem] leading-none font-bold">
+          {formatNumber(count)}
+        </h3>
         <p className="uppercase tracking-[0.4em] text-sm text-[var(--color-text-secondary)]">
           {metric}
         </p>
