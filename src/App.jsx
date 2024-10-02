@@ -10,7 +10,7 @@ export default function App() {
       <Header />
       <main>
         <div className="w-full max-w-screen-lg mx-auto px-4">
-          <section className="flex gap-8 flex-wrap mb-14">
+          <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-14">
             {followers.map((data, index) => (
               <FollowerCard key={index} {...data} />
             ))}
@@ -19,7 +19,7 @@ export default function App() {
             <h2 className="text-3xl font-bold mb-6 text-[var(--color-text-secondary)]">
               Overview - Today
             </h2>
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
               {overview.map((data, index) => (
                 <OverviewCard key={index} {...data} />
               ))}
