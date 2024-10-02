@@ -3,7 +3,7 @@ import iconDown from "../assets/images/icon-down.svg";
 import { formatNumber } from "../utils/formatNumber";
 
 export default function FollowerCard(props) {
-  const { platform, username, followers, todayChange, color } = props;
+  const { platform, username, count, metric, todayChange, color } = props;
 
   const icon = todayChange > 0 ? iconUp : iconDown;
 
@@ -26,9 +26,9 @@ export default function FollowerCard(props) {
         </p>
       </div>
       <div>
-        <h3 className="text-6xl font-bold">{formatNumber(followers)}</h3>
+        <h3 className="text-6xl font-bold">{formatNumber(count)}</h3>
         <p className="uppercase tracking-[0.4em] text-sm text-[var(--color-text-secondary)]">
-          Followers
+          {metric}
         </p>
       </div>
       <p
