@@ -3,7 +3,7 @@ import { followers } from "../data/followers";
 
 export default function Header() {
   const totalFollowers = followers.reduce(
-    (acc, { followers: followersCount }) => acc + followersCount,
+    (acc, { count: followersCount }) => acc + followersCount,
     0
   );
 
