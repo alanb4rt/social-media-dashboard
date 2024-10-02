@@ -11,7 +11,7 @@ export default function ToggleButton() {
   const togglePosition = !isDarkMode ? "justify-end" : "";
 
   return (
-    <section className="flex flex-row items-center gap-4 w-fit">
+    <section className="flex flex-row items-center justify-between sm:justify-normal gap-4 sm:w-fit">
       <p className="text-[var(--color-text-secondary)] font-bold">Dark Mode</p>
       <div className="ctn-toggle-button" aria-checked={isDarkMode}>
         <button
