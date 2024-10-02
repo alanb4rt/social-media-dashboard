@@ -39,6 +39,10 @@
   --color-text-secondary: hsl(228 34% 66%);
 }
 
+[data-theme="dark"] h2 {
+  --color-text-secondary: white;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -49,6 +53,10 @@ body {
   background: var(--color-bg);
   color: var(--color-text-main);
   min-height: 100vh;
+
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 #header::before {
@@ -77,4 +85,14 @@ body {
   background: var(--color-bg-card);
   border-radius: 0.25rem;
   overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  background: hsl(232 33% 91%);
+}
+
+[data-theme="dark"] .card:hover {
+  background: hsl(228 26% 27%);
 }
